@@ -7,11 +7,11 @@ require "beta_invite/version"
 Gem::Specification.new do |s|
   s.name        = "beta_invite"
   s.version     = BetaInvite::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of BetaInvite."
-  s.description = "TODO: Description of BetaInvite."
+  s.authors     = ["Kaushik Thirthappa"]
+  s.email       = ["thirthappa.kaushik@gmail.com"]
+  s.homepage    = "http://ktkaushik.com"
+  s.summary     = "Coming soon"
+  s.description = "coming soon"
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
