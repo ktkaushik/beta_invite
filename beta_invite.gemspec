@@ -7,6 +7,8 @@ require "beta_invite/version"
 Gem::Specification.new do |s|
   s.name        = "beta_invite"
   s.version     = BetaInvite::VERSION
+  s.platform    = Gem::Platform::RUBY
+  s.licenses    = ["MIT"]
   s.authors     = ["Kaushik Thirthappa"]
   s.email       = ["thirthappa.kaushik@gmail.com"]
   s.homepage    = "https://github.com/ktkaushik/beta_invite"
