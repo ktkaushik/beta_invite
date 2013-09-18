@@ -1,0 +1,6 @@
+<h1>You are in new of beta_invites</h1>
+<%= form_for @beta_invite do |f| %>
+  <%= f.label :email, 'Email'%>
+  <%= f.text_field :email, placeholder: "Enter your email"  %>
+  <%= f.submit%>
+<% end %>

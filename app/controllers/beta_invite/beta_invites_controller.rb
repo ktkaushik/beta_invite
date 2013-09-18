@@ -9,11 +9,11 @@ module BetaInvite
       # is it necessary to initialize the BetaInvite model ?
       # Create a form_tag ?
       # 
+
+      @beta_invite = BetaInvite.new
     end
 
     def create
-      beta_invite = BetaInvite.new(params[:beta_invite])
-      
     end
   end
 end

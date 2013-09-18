@@ -1,3 +1,3 @@
 BetaInvite::Engine.routes.draw do
-  resources :beta_invite  
+  resources :beta_invites
 end
