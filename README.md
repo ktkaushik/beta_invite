@@ -36,6 +36,23 @@ Now mount the `BetaInvite` engine by going into your `routes.rb` file and adding
 mount BetaInvite::Engine, at: '/'
 ```
 
+####Views
+
+
+You can generate the views that the gem has into your rails app by this below command
+
+```ruby
+rails generate beta_invite:views
+```
+
+___ for version >= 0.1.1 ___
+
+You may wanna upgrade your gem at this point in time
+
+```ruby
+gem update beta_invite
+```
+
 Obviously, you can mount it to any route.
 
 __You may wanna restart your server__
