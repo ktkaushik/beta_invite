@@ -17,7 +17,6 @@ module BetaInvite
         redirect_to beta_invites_path
       else
         flash[:alert] = beta_invite.errors.full_messages
-        # render 'new'
         redirect_to new_beta_invite_path
       end
     end
