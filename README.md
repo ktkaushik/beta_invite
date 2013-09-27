@@ -45,7 +45,7 @@ You can generate the views that the gem has into your rails app by this below co
 rails generate beta_invite:views
 ```
 
-___ for version >= 0.1.1 ___
+___for version >= 0.1.1___
 
 You may wanna upgrade your gem at this point in time
 
