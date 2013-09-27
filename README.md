@@ -38,14 +38,13 @@ mount BetaInvite::Engine, at: '/'
 
 ####Views
 
+___for version >= 0.1.1___
 
 You can generate the views that the gem has into your rails app by this below command
 
 ```ruby
 rails generate beta_invite:views
 ```
-
-___for version >= 0.1.1___
 
 You may wanna upgrade your gem at this point in time
 
@@ -56,6 +55,8 @@ gem update beta_invite
 Obviously, you can mount it to any route.
 
 __You may wanna restart your server__
+
+###[Changelogs](https://github.com/ktkaushik/beta_invite/wiki/Changelog)
 
 ##Contributing
 ```
