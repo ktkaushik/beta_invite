@@ -36,6 +36,16 @@ Now mount the `BetaInvite` engine by going into your `routes.rb` file and adding
 mount BetaInvite::Engine, at: '/'
 ```
 
+####Where are the invites ?
+
+Well, you can fire up your rails console and you will see that all the tables are under `BetaInvite::BetaInvite`
+
+This should fetch you all the records
+
+```ruby
+BetaInvite::BetaInvite.all
+```
+
 ####Views
 
 ___for version >= 0.1.1___
