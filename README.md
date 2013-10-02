@@ -12,6 +12,18 @@ gem install beta_invite
 
 or with the use of __Bundler__, you can just write `beta_invite` in your `Gemfile` and run `bundle` command in your CLI.
 
+Installing from the source:
+
+```
+gem 'beta_invite', :github => 'git://github.com/ktkaushik/beta_invite.git'
+```
+
+OR use the shorthand
+
+```
+gem 'beta_invite', :github => 'ktkaushik/beta_invite'
+```
+
 ###Setup
 
 ####Migrations
