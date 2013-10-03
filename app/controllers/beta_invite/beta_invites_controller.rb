@@ -7,11 +7,9 @@ module BetaInvite
       @beta_invite = BetaInvite.new
     end
 
+    # Save the email and a randomly generated token
     def create
-      email = params[:beta_invite][:email]
-      beta_invite = BetaInvite.new
-      beta_invite.email = email
-      beta_invite.token = SecureRandom.hex(10) #generate a random hex token for all the users
+      beta_invite = BetaInvite.new( email: params[:beta_invite][:email], token: SecureRandom.hex(10) )
       if beta_invite.save
         flash[:success] = "#{email} has been registered for beta invite"
         redirect_to beta_invites_path
