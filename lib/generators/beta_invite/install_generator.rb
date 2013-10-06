@@ -12,6 +12,7 @@ module BetaInvite
         template "beta_invite.rb", "config/initializers/beta_invite.rb"
       end
 
+      # Display readme when the user installs the gem. inspired from Devise gem :)
       def show_readme
         readme "README" if behavior == :invoke
       end

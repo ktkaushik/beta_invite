@@ -1,1 +1,3 @@
-# BetaInvite Module coming soon !!
+BetaInvite.setup do |config|
+  
+end
