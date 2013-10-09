@@ -9,14 +9,22 @@ module BetaInvite
 
     # Save the email and a randomly generated token
     def create
-      beta_invite = BetaInvite.new( email: params[:beta_invite][:email], token: SecureRandom.hex(10) )
+      email = params[:beta_invite][:email]
+      beta_invite = BetaInvite.new( email: email, token: SecureRandom.hex(10) )
+
       if beta_invite.save
-        flash[:success] = "#{params[:beta_invite][:email]} has been registered for beta invite"
+        flash[:success] = "#{email} has been registered for beta invite"
+
+        # send an email if configured
+        if BetaInviteSetup.send_email_to_admins
+          BetaInvite::BetaInviteNotificationMailer.notify_admins( BetaInviteSetup.from_email,  BetaInviteSetup.admin_emails, email, BetaInvite.count ).deliver
+        end
         redirect_to beta_invites_path
       else
         flash[:alert] = beta_invite.errors.full_messages
         redirect_to new_beta_invite_path
       end
+
     end
   end
 end
