@@ -5,8 +5,8 @@ BetaInviteSetup.setup do |config|
 
   # If you have set the above option as true then you should add the email addresses
   # of the admins who should receive a notification about the user having requested
-  # for an invite in an array.
-  config.admin_emails = []
+  # for an invite in a comma separated value.
+  config.admin_emails = 'email_1@example.org, email_2@example.org'
 
   # Configure your mail configuration in the environments file and enter the from email
   # to send emails
