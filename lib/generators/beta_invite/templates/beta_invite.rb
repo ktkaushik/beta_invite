@@ -1,3 +1,7 @@
+# 
+# Setup your BetaInvite engine in easy steps using this config initializer
+# 
+
 BetaInviteSetup.setup do |config|
   # Setting this to true would send an email to the admins saying that a
   # particular user with a particular email address has requested for an invite
@@ -11,4 +15,8 @@ BetaInviteSetup.setup do |config|
   # Configure your mail configuration in the environments file and enter the from email
   # to send emails
   config.from_email = 'from@email.com'
+
+  # Send thank you emails to the user who has requested for an invite
+  # False by default
+  config.send_thank_you_email = false
 end
