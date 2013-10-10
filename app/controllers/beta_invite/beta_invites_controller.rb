@@ -19,6 +19,10 @@ module BetaInvite
         if BetaInviteSetup.send_email_to_admins
           BetaInvite::BetaInviteNotificationMailer.notify_admins( BetaInviteSetup.from_email,  BetaInviteSetup.admin_emails, email, BetaInvite.count ).deliver
         end
+
+        if BetaInviteSetup.send_thank_you_email
+          BetaInvite::BetaInviteNotificationMailer.thank_user( BetaInviteSetup.from_email, email ).deliver
+        end
         redirect_to beta_invites_path
       else
         flash[:alert] = beta_invite.errors.full_messages
