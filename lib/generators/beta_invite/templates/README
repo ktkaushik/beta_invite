@@ -1,3 +1,18 @@
-===============================================================================
-Instructions for after install of the beta_invite gem here !!
-===============================================================================
+=================================================================================
+Instructions for beta_invite gem
+
+An initializer by the name beta_invite.rb has been created in your initializer,
+wherein you will find a few options there with instructions for you to configure
+
+You can also generate views by running this comamnd:
+
+ rails g beta_invite:views
+
+Please checkout the README on the below URL for full information:
+
+https://github.com/ktkaushik/beta_invite#betainvite
+
+Thanks !
+Roadmap: https://github.com/ktkaushik/beta_invite/wiki/Roadmap
+
+=================================================================================
