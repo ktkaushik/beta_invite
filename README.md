@@ -18,11 +18,7 @@ Installing from the source:
 gem 'beta_invite', :github => 'git://github.com/ktkaushik/beta_invite.git'
 ```
 
-OR use the shorthand
-
-```
-gem 'beta_invite', :github => 'ktkaushik/beta_invite'
-```
+If you are living on the edge with `beta_invite` gem, then you should refer [this](https://github.com/ktkaushik/beta_invite/blob/master/living_on_the_edge.md)
 
 ###Setup
 
