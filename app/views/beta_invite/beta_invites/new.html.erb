@@ -1,4 +1,11 @@
-<h1>You are in new of beta_invites</h1>
+<% flash.each do |key, msg| %>
+  <div class="alert alert-#{name == :notice ? 'success' : 'error' }">
+    <% Array(msg).each_with_index do |message, index| %>
+      <%= content_tag :div, message %>
+    <% end %>
+  </div>
+<% end %>
+<h1>Request for a beta invite</h1>
 <%= form_for @beta_invite do |f| %>
   <%= f.label :email, 'Email'%>
   <%= f.text_field :email, placeholder: "Enter your email"  %>
