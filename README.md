@@ -2,9 +2,27 @@
 
 A simple gem to help you build your __beta_invite__ page up and running in no time
 
-##Instructions
+* [Features](#features)
+* [Installation](#installation)
+* [Setup](#setup)
+	- [Initializer](#initializer)
+	- [Migrations](#migrations)
+* [Mount](#mount)
+* [API](#where-are-the-invites-)
+* [Views](#views)
+* [License](#license)
 
-###Installation
+
+##Features
+
+* Quick and easy setup of __Beta Invite__ engine and its functionality
+* Random Token stored and generated with each invite
+* Customize and modify all the views and email templates
+* Send emails as notification when someone requests for an invite to the admins
+* Send __Thank you__ emails which can easily be customized by the developer in future.
+
+
+##Installation
 
 ```ruby
 gem install beta_invite
@@ -20,9 +38,19 @@ gem 'beta_invite', :github => 'git://github.com/ktkaushik/beta_invite.git'
 
 If you are living on the edge with `beta_invite` gem, then you should refer [this](https://github.com/ktkaushik/beta_invite/blob/master/living_on_the_edge.md)
 
-###Setup
+##Setup
 
-####Migrations
+###Initializer
+
+The `beta_invite` gem has a beta_invite installer. First step to setup is to run the __install generator__ 
+
+```ruby
+rails g beta_invite:install
+```
+
+This would create an __initializer__ named `beta_invite.rb`
+
+###Migrations
 The setup is very primary as of now. Once installed, you will need to copy the migrations by running this command
 
 ```ruby
@@ -37,14 +65,15 @@ rake db:migrate
 
 The above migrations would create a `beta_invites` table in your app
 
-####Mount
+
+###Mount
 Now mount the `BetaInvite` engine by going into your `routes.rb` file and adding the below line
 
 ```ruby
 mount BetaInvite::Engine, at: '/'
 ```
 
-####Where are the invites ?
+##Where are the invites ?
 
 Well, you can fire up your rails console and you will see that all the tables are under `BetaInvite::BetaInvite`
 
@@ -54,7 +83,7 @@ This should fetch you all the records
 BetaInvite::BetaInvite.all
 ```
 
-####Views
+##Views
 
 ___for version >= 0.1.1___
 
