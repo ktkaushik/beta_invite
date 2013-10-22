@@ -11,6 +11,8 @@ A simple gem to help you build your __beta_invite__ page up and running in no ti
 * [API](#where-are-the-invites-)
 * [Views](#views)
 
+## For version >= 1.0.0
+
 ##Features
 
 * Quick and easy setup of __Beta Invite__ engine and its functionality
