@@ -7,7 +7,7 @@ A simple gem to help you build your __beta_invite__ page up and running in no ti
 * [Setup](#setup)
 	- [Initializer](#initializer)
 	- [Migrations](#migrations)
-* [Mount](#mount)
+	- [Mount](#mount)
 * [API](#where-are-the-invites-)
 * [Views](#views)
 * [License](#license)
