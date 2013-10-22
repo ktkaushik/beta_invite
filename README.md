@@ -10,8 +10,6 @@ A simple gem to help you build your __beta_invite__ page up and running in no ti
 	- [Mount](#mount)
 * [API](#where-are-the-invites-)
 * [Views](#views)
-* [License](#license)
-
 
 ##Features
 
