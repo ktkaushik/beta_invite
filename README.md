@@ -2,6 +2,8 @@
 
 A simple gem to help you build your __beta_invite__ page up and running in no time
 
+##<a name='toc'>Table of Contents</a>
+
 * [Features](#features)
 * [Installation](#installation)
 * [Setup](#setup)
@@ -21,6 +23,7 @@ A simple gem to help you build your __beta_invite__ page up and running in no ti
 * Send emails as notification when someone requests for an invite to the admins
 * Send __Thank you__ emails which can easily be customized by the developer in future.
 
+**[[⬆]](#toc)**
 
 ##Installation
 
@@ -38,6 +41,8 @@ gem 'beta_invite', :github => 'git://github.com/ktkaushik/beta_invite.git'
 
 If you are living on the edge with `beta_invite` gem, then you should refer [this](https://github.com/ktkaushik/beta_invite/blob/master/living_on_the_edge.md)
 
+**[[⬆]](#toc)**
+
 ##Setup
 
 ###Initializer
@@ -49,6 +54,8 @@ rails g beta_invite:install
 ```
 
 This would create an __initializer__ named `beta_invite.rb`
+
+**[[⬆]](#toc)**
 
 ###Migrations
 The setup is very primary as of now. Once installed, you will need to copy the migrations by running this command
@@ -65,6 +72,7 @@ rake db:migrate
 
 The above migrations would create a `beta_invites` table in your app
 
+**[[⬆]](#toc)**
 
 ###Mount
 Now mount the `BetaInvite` engine by going into your `routes.rb` file and adding the below line
@@ -82,6 +90,8 @@ This should fetch you all the records
 ```ruby
 BetaInvite::BetaInvite.all
 ```
+
+**[[⬆]](#toc)**
 
 ##Views
 
@@ -103,6 +113,8 @@ Obviously, you can mount it to any route.
 
 __You may wanna restart your server__
 
+**[[⬆]](#toc)**
+
 ###[Roadmap](https://github.com/ktkaushik/beta_invite/wiki/Roadmap)
 ###[Changelogs](https://github.com/ktkaushik/beta_invite/wiki/Changelog)
 
@@ -117,6 +129,7 @@ __You may wanna restart your server__
 
 Thank you !
 
+**[[⬆]](#toc)**
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ktkaushik/beta_invite/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
