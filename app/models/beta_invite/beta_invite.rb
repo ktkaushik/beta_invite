@@ -3,6 +3,6 @@ module BetaInvite
     attr_accessible :email, :token
   
     # validating email with presence, uniqueness and format 
-    validates :email, presence: true, uniqueness: true, format: { with: /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/ }
+    validates :email, presence: true, uniqueness: true, format: { with: BetaInviteSetup.email_validation_regex }
   end
 end
