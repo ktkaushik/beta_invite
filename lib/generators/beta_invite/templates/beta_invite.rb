@@ -19,4 +19,9 @@ BetaInviteSetup.setup do |config|
   # Send thank you emails to the user who has requested for an invite
   # False by default
   config.send_thank_you_email = false
+
+  # This regex would be used to validate the email addresses in the beta_invite model
+  # You can customize it your needs. Do not add this in string quotes. Pure Regex
+  config.email_validation_regex = /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/
+
 end
