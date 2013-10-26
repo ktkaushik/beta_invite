@@ -1,10 +1,37 @@
 #BetaInvite
 
-Living on the edge with beta_invite gem
+A simple gem to help you build your __beta_invite__ page up and running in no time
 
-##Instructions
+##<a name='toc'>Table of Contents</a>
 
-###Installation
+* [Features](#features)
+* [Installation](#installation)
+* [Setup](#setup)
+	- [Initializer](#initializer)
+	- [Migrations](#migrations)
+	- [Mount](#mount)
+* [API](#where-are-the-invites-)
+* [Views](#views)
+
+## For version >= 1.0.0
+
+##Features
+
+* Quick and easy setup of __Beta Invite__ engine and its functionality
+* Random Token stored and generated with each invite
+* Customize and modify all the views and email templates
+* Send emails as notification when someone requests for an invite to the admins
+* Send __Thank you__ emails which can easily be customized by the developer in future.
+
+**[[⬆]](#toc)**
+
+##Installation
+
+```ruby
+gem install beta_invite
+```
+
+or with the use of __Bundler__, you can just write `beta_invite` in your `Gemfile` and run `bundle` command in your CLI.
 
 Installing from the source:
 
@@ -12,17 +39,25 @@ Installing from the source:
 gem 'beta_invite', :github => 'git://github.com/ktkaushik/beta_invite.git'
 ```
 
-###Setup
+If you are living on the edge with `beta_invite` gem, then you should refer [this](https://github.com/ktkaushik/beta_invite/blob/master/living_on_the_edge.md)
 
-There is a new generator which you need to run to install the gem
+**[[⬆]](#toc)**
+
+##Setup
+
+###Initializer
+
+The `beta_invite` gem has a beta_invite installer. First step to setup is to run the __install generator__ 
 
 ```ruby
-rails generate beta_invite:install
+rails g beta_invite:install
 ```
 
-This would copy an initializer to your app named as `beta_invite.rb`. You'll find bunch of settings in there.
+This would create an __initializer__ named `beta_invite.rb`
 
-####Migrations
+**[[⬆]](#toc)**
+
+###Migrations
 The setup is very primary as of now. Once installed, you will need to copy the migrations by running this command
 
 ```ruby
@@ -37,14 +72,16 @@ rake db:migrate
 
 The above migrations would create a `beta_invites` table in your app
 
-####Mount
+**[[⬆]](#toc)**
+
+###Mount
 Now mount the `BetaInvite` engine by going into your `routes.rb` file and adding the below line
 
 ```ruby
 mount BetaInvite::Engine, at: '/'
 ```
 
-####Where are the invites ?
+##Where are the invites ?
 
 Well, you can fire up your rails console and you will see that all the tables are under `BetaInvite::BetaInvite`
 
@@ -54,7 +91,9 @@ This should fetch you all the records
 BetaInvite::BetaInvite.all
 ```
 
-####Views
+**[[⬆]](#toc)**
+
+##Views
 
 ___for version >= 0.1.1___
 
@@ -74,6 +113,8 @@ Obviously, you can mount it to any route.
 
 __You may wanna restart your server__
 
+**[[⬆]](#toc)**
+
 ###[Roadmap](https://github.com/ktkaushik/beta_invite/wiki/Roadmap)
 ###[Changelogs](https://github.com/ktkaushik/beta_invite/wiki/Changelog)
 
@@ -87,3 +128,8 @@ __You may wanna restart your server__
 ```
 
 Thank you !
+
+**[[⬆]](#toc)**
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ktkaushik/beta_invite/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
