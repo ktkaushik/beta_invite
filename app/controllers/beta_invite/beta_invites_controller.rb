@@ -28,6 +28,13 @@ module BetaInvite
         flash[:alert] = beta_invite.errors.full_messages
         redirect_to new_beta_invite_path
       end
+    end
+
+    def index
+      @beta_invites = BetaInvite.all
+    end
+
+    def show
 
     end
   end
