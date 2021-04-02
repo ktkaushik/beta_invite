@@ -1,8 +1,10 @@
-#BetaInvite
+# BetaInvite
 
 A simple gem to help you build your __beta_invite__ page up and running in no time
 
-##<a name='toc'>Table of Contents</a>
+![Project unmaintained](https://img.shields.io/badge/project-unmaintained-red.svg)
+
+## <a name='toc'>Table of Contents</a>
 
 * [Features](#features)
 * [Installation](#installation)
@@ -15,7 +17,7 @@ A simple gem to help you build your __beta_invite__ page up and running in no ti
 
 ## For version >= 1.0.0
 
-##Features
+## Features
 
 * Quick and easy setup of __Beta Invite__ engine and its functionality
 * Random Token stored and generated with each invite
@@ -23,9 +25,9 @@ A simple gem to help you build your __beta_invite__ page up and running in no ti
 * Send emails as notification when someone requests for an invite to the admins
 * Send __Thank you__ emails which can easily be customized by the developer in future.
 
-**[[⬆]](#toc)**
+** [[⬆]](#toc)**
 
-##Installation
+## Installation
 
 ```ruby
 gem install beta_invite
@@ -41,11 +43,11 @@ gem 'beta_invite', :github => 'git://github.com/ktkaushik/beta_invite.git'
 
 If you are living on the edge with `beta_invite` gem, then you should refer [this](https://github.com/ktkaushik/beta_invite/blob/master/living_on_the_edge.md)
 
-**[[⬆]](#toc)**
+** [[⬆]](#toc)**
 
-##Setup
+## Setup
 
-###Initializer
+### Initializer
 
 The `beta_invite` gem has a beta_invite installer. First step to setup is to run the __install generator__ 
 
@@ -55,9 +57,9 @@ rails g beta_invite:install
 
 This would create an __initializer__ named `beta_invite.rb`
 
-**[[⬆]](#toc)**
+** [[⬆]](#toc)**
 
-###Migrations
+### Migrations
 The setup is very primary as of now. Once installed, you will need to copy the migrations by running this command
 
 ```ruby
@@ -72,7 +74,7 @@ rake db:migrate
 
 The above migrations would create a `beta_invites` table in your app
 
-**[[⬆]](#toc)**
+** [[⬆]](#toc)**
 
 ###Mount
 Now mount the `BetaInvite` engine by going into your `routes.rb` file and adding the below line
@@ -81,7 +83,7 @@ Now mount the `BetaInvite` engine by going into your `routes.rb` file and adding
 mount BetaInvite::Engine, at: '/'
 ```
 
-##Where are the invites ?
+## Where are the invites ?
 
 Well, you can fire up your rails console and you will see that all the tables are under `BetaInvite::BetaInvite`
 
@@ -91,7 +93,7 @@ This should fetch you all the records
 BetaInvite::BetaInvite.all
 ```
 
-**[[⬆]](#toc)**
+** [[⬆]](#toc)**
 
 ##Views
 
@@ -115,10 +117,10 @@ __You may wanna restart your server__
 
 **[[⬆]](#toc)**
 
-###[Roadmap](https://github.com/ktkaushik/beta_invite/wiki/Roadmap)
-###[Changelogs](https://github.com/ktkaushik/beta_invite/wiki/Changelog)
+### [Roadmap](https://github.com/ktkaushik/beta_invite/wiki/Roadmap)
+### [Changelogs](https://github.com/ktkaushik/beta_invite/wiki/Changelog)
 
-##Contributing
+## Contributing
 ```
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
@@ -129,7 +131,4 @@ __You may wanna restart your server__
 
 Thank you !
 
-**[[⬆]](#toc)**
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/ktkaushik/beta_invite/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+** [[⬆]](#toc) **
